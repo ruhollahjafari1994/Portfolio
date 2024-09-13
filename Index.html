@@ -1,124 +1,224 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Ruhollah Jafari</title>
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/css/custom.css">
+    <title>Roohollah Jafari - Software Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            min-height: 100vh;
+            background-color: #E8EAF6;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            width: 1000px;
+            height: 600px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 30%;
+            background-color: #E0E0E0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .sidebar img {
+            width: 100px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .sidebar h2 {
+            font-size: 22px;
+            color: #333;
+        }
+
+        .sidebar h4 {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .sidebar .contact-icons {
+            display: flex;
+            justify-content: space-between;
+            width: 150px;
+            margin: 20px 0;
+        }
+
+        .contact-icons a {
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        .info, .skills, .languages {
+            margin-bottom: 20px;
+        }
+
+        .info p, .skills ul, .languages p {
+            font-size: 14px;
+            color: #444;
+            margin: 5px 0;
+        }
+
+        .skills ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .skills ul li {
+            margin-bottom: 5px;
+        }
+
+        /* Main content */
+        .main-content {
+            width: 70%;
+            background-color: #FFEB3B;
+            padding: 40px;
+            position: relative;
+        }
+
+        .main-content h1 {
+            font-size: 50px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .main-content h3 {
+            font-size: 24px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .main-content p {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .main-content .contact-button {
+            background-color: #1976D2;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .main-content .contact-button:hover {
+            background-color: #1565C0;
+        }
+
+        /* Navigation links */
+        .navigation {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+        }
+
+        .navigation a {
+            font-size: 18px;
+            color: #333;
+            text-decoration: none;
+            margin: 10px 0;
+        }
+
+        .navigation a:hover {
+            color: #1976D2;
+        }
+
+    </style>
 </head>
-
 <body>
+
     <div class="container">
-        <div class="row bg-info align-items-end" style="height: 100vh;">
-            <div class="row align-items-md-start">
-                <section class="col order-1 d-flex flex-column">
-                    <img src="/img/Developer-Sample-1.png" alt="" class="img-fluid order-1">
-                    <h4 class="order-0">Bootstrap 0</h4>
-                    <p class="order-2">--Ruhola.ir</p>
-                </section>
-                <section class="col order-2  d-flex flex-column">
-                    <img src="/img/Developer-Sample.png" alt="" class="img-fluid order-0">
-                    <h4 class="order-1">Bootstrap 1</h4>
-                    <p class="order-2">--Ruhola.ir</p>
-                </section>
-                <section class="col order-1  d-flex flex-column">
-                    <img src="/img/Coffe.jpg" alt="" class="img-fluid order-2">
-                    <h4 class="order-0">Bootstrap 2</h4>
-                    <p class="order-1">--Ruhola.ir</p>
-                </section>
-                <section class="col order-0  d-flex flex-column">
-                    <img src="/img/Land.jpg" alt="" class="img-fluid order-1">
-                    <h4 class="order-2">Bootstrap 3</h4>
-                    <p class="order-0">--Ruhola.ir</p>
-                </section>
+
+        <!-- Sidebar Section -->
+        <div class="sidebar">
+            <img src="images/profile image.png" alt="Profile Picture">
+            <h2>Roohollah Jafari</h2>
+            <h4>Software Engineer</h4>
+
+            <!-- Contact Icons -->
+            <div class="contact-icons">
+                <a href="#" target="_blank">🔗</a>
+                <a href="#" target="_blank">💼</a>
+                <a href="#" target="_blank">✉️</a>
+                <a href="#" target="_blank">🐦</a>
+            </div>
+
+            <!-- Information Section -->
+            <div class="info">
+                <p><strong>Date of birth:</strong> 1372/12/13</p>
+                <p><strong>Residence:</strong> Tehran</p>
+                <p><strong>Experience:</strong> 7+ Years</p>
+                <p><strong>Freelance:</strong> Available</p>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>C# and .NET</li>
+                    <li>Microservices Architecture Design</li>
+                    <li>Entity Framework Core</li>
+                    <li>SQL and T-SQL</li>
+                    <li>Architectural Pattern Design</li>
+                    <li>Test-Driven Development (TDD)</li>
+                </ul>
+            </div>
+
+            <!-- Languages Section -->
+            <div class="languages">
+                <p><strong>Languages:</strong></p>
+                <p>English: B2</p>
             </div>
         </div>
-    </div>
-    <div class="container">
-        <div class="row bg-danger">
-            <section class="col-sm-4 offset-sm-8  offset-md-9 offset-xs-12 offset-lg-12">
-                <img src="/img/Ruhollah-Jafari.jpg" style="width: 100px;" class="img-fluid rounded-circle">
-                <h4>Ruhollah Jafari</h4>
-                <p>Software Engineer</p>
-            </section>
 
-        </div>
-        <div class="row">
+        <!-- Main Content Section -->
+        <div class="main-content">
+            <h1>WELCOME</h1>
+            <h3>I'm Roohollah Jafari</h3>
+            <div>
 
-            <p class="bg-warning text-white text-justify col-sm-6">
-                Lorem ipsum dolor sit amet, euismod blandit
-                .
-            </p>
-            <p class="bg-success text-white text-justify col-sm-6">
-                Lorem ipsum dolor sit amet, euismod blandit
-                .
-            </p>
-            <p class="bg-primary text-white text-justify col-sm-4">
-                Lorem ipsum dolor sit amet, euismod blandit
-                .
-            </p>
-            <p class="bg-dark text-white text-justify col-sm-4">
-                Lorem ipsum dolor sit amet, euismod blandit
-                .
-            </p>
-            <p class="bg-info text-white text-justify col-sm-4">
-                Lorem ipsum dolor sit amet, euismod blandit
-                .
-            </p>
-            <p class="bg-primary text-white text-justify col-sm-6">
-                Lorem ipsum dolor sit amet, euismod blandit
-                .
-            </p>
-            <p class="bg-success text-white text-justify col-sm-6">
-                Lorem ipsum dolor sit amet, euismod blandit
-                .
-            </p>
-            <p class="bg-primary text-white text-justify col-sm-4">
-                Lorem ipsum dolor sit amet, euismod blandit
-                .
-            </p>
-            <p class="bg-dark text-white text-justify col-sm-4">
-                Lorem ipsum dolor sit amet, euismod blandit
-                .
-            </p>
-            <p class="bg-primary text-white text-justify col-sm-4">
-                Lorem ipsum dolor sit amet, euismod blandit
-                .
-            </p>
-            <p class="bg-dark text-white text-justify col-sm-6">
-                Lorem ipsum dolor sit amet, euismod blandit
-                .
-            </p>
-            <p class="bg-secondary text-white text-justify col-sm-6">
-                Lorem ipsum dolor sit amet, euismod blandit
-                .
-            </p>
-            <h2 style="color: var(--danger);">TopLearn.com</h2>
-        </div>
+                <p>Here You Can Find More Information About Me, My Recent Projects, And My Skills.</p>
+                <img src="images/Ruhollah Jafari Software Engineer_prev_ui.png" alt="Profile Picture">
+                <button class="contact-button">Contact Me</button>
+            </div>
 
-        <div class="row">
-            <div class="container">
-                <p class="bg-warning text-white text-justify col">
-                    Lorem ipsum dolor sit amet, euismod blandit
-                    .
-                </p>
-                <p class="bg-success text-white text-justify col">
-                    Lorem ipsum dolor sit amet, euismod blandit
-                    .
-                </p>
-                <p class="bg-primary text-white text-justify col">
-                    Lorem ipsum dolor sit amet, euismod blandit
-                    .
-                </p>
+            <!-- Navigation Links -->
+            <div class="navigation">
+                <a href="#">Home</a>
+                <a href="#">Resume</a>
+                <a href="#">Works</a>
+                <a href="#">About Me</a>
             </div>
         </div>
-    </div>
     </div>
 
 </body>
-<script src="js/jquery-3.3.1.min.js" />
-<script src="js/bootstrap.min.js" />
-
 </html>
